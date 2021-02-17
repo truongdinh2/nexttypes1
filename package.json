@@ -5,7 +5,11 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
+    "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
+    "isready": "npm run format && npm run lint && npm run build"
   },
   "dependencies": {
     "next": "latest",
